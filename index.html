@@ -1,128 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kabir Prajapati — Designer & Developer</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kabir Prajapati — Designer & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <!-- Custom Cursor -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
 
-<!-- 3D Canvas Background -->
+<!-- 3D Particle Canvas -->
 <canvas id="bg-canvas"></canvas>
 
-<!-- NAV -->
+<!-- NAVIGATION -->
 <nav id="navbar">
   <div class="nav-inner">
     <div class="logo">KP</div>
     <div class="nav-links">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section id="home">
   <div class="container">
-    <div class="hero-wrap">
+    <div class="hero-content">
       <div class="hero-left">
-        <div class="tag"><span></span> Open to Opportunities</div>
-        <h1 class="hero-name">
-          <div class="line"><span>Kabir</span></div>
-          <div class="line"><span>Prajapati<span class="accent">.</span></span></div>
+        <div class="status-tag">
+          <span class="status-dot"></span>
+          <span>Open to Opportunities</span>
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line">Hi, I'm</span>
+          <span class="title-line"><span class="gradient-text">Kabir Prajapati</span></span>
+          <span class="title-line subtitle">UI/UX Designer & Vibe Coder</span>
         </h1>
-        <p class="hero-sub">UI/UX Designer · Vibe Coder · SEO Content Writer — crafting digital experiences that feel alive.</p>
-        <div class="hero-btns">
-          <a href="#projects" class="btn-primary">View Projects</a>
-          <a href="#contact" class="btn-outline">Get In Touch</a>
+        <p class="hero-desc">Crafting digital experiences that feel alive. From clean UI/UX to animated web experiences and SEO content that ranks.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
       </div>
-
       <div class="hero-right">
-  <div class="profile-3d" id="profile3d">
-    <div class="avatar-ring">
-      <img src="resources/profile-pic.png" alt="Kabir Prajapati">
+        <div class="profile-orbit" id="profileOrbit">
+          <div class="profile-image">
+            <img src="resources/profile-pic.png" alt="Kabir Prajapati">
+          </div>
+          <div class="orbit-badge" style="--delay: 0s">Intern @ Orbosis Global</div>
+          <div class="orbit-badge" style="--delay: -1s">🎓 BIT 2024–Present</div>
+          <div class="orbit-badge" style="--delay: -2s">Kathmandu, Nepal</div>
+        </div>
+      </div>
     </div>
-    <div class="float-badge b1"><div class="dot"></div> Intern @ Orbosis Global</div>
-    <div class="float-badge b2">🎓 BIT · 2024–Present</div>
-  </div>
-</div>
-
-    </div>
-    <div class="scroll-hint">
+    <div class="scroll-indicator">
       <div class="scroll-line"></div>
-      <span>Scroll</span>
+      <span>Scroll to Explore</span>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
+<!-- ABOUT SECTION -->
+<section id="about" class="section">
   <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-subtitle">Designing with purpose, coding with passion</p>
+    </div>
     <div class="about-grid">
-      <div class="about-text reveal">
-        <div class="section-label">About Me</div>
-        <h2 class="section-title">Designing with Purpose, Coding with Vision</h2>
-        <p>I'm <strong>Kabir Prajapati</strong>, an IT student at Padmashree College, Kathmandu, currently pursuing a Bachelor's in Information Technology (2024–Present).</p>
-        <p>I blend clean UI/UX design with vibe coding and SEO-first content writing. Currently interning at <strong>Orbosis Global Pvt. Ltd. (India)</strong> where I contribute to real-world digital projects.</p>
-        <p>I believe every pixel has a purpose and every word should rank. Let's build something remarkable.</p>
-        <div class="about-tags">
-          <span class="about-tag">Figma</span>
-          <span class="about-tag">Graphics Designing</span>
-          <span class="about-tag">SEO Writing</span>
-          <span class="about-tag">Vibe Coding</span>
+      <div class="about-bio reveal-item">
+        <h3>Hey, I'm Kabir</h3>
+        <p>IT student at Padmashree College, Kathmandu. Currently interning at <strong>Orbosis Global Pvt. Ltd.</strong> where I build real-world digital products.</p>
+        <p>I create clean UI/UX designs, smooth web animations, and SEO content that converts. Every project gets my full focus.</p>
+        <div class="skill-tags">
+          <span>Figma</span>
+          <span>HTML/CSS/JS</span>
+          <span>SEO</span>
+          <span>Graphics</span>
         </div>
       </div>
-      <div>
-        <div class="stats-grid reveal reveal-delay-1">
+      <div class="about-stats reveal-item">
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="1">0</div>
+            <div class="stat-label">Internship</div>
+          </div>
           <div class="stat-card">
             <div class="stat-number" data-target="4">0</div>
-            <div class="stat-label">Total Projects</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" data-target="3">0</div>
-            <div class="stat-label">Skill Domains</div>
-          </div>
-          <a href="https://www.orbosis.com/" target="_blank" style="text-decoration:none; color:inherit;">
-            <div class="stat-card">
-              <div class="stat-number" data-target="1">0</div>
-              <div class="stat-label">Active Internship</div>
-            </div>
-          </a>
-        </div>
-
-        <div class="timeline reveal reveal-delay-2">
-          <h3>My Journey</h3>
-          <div class="tl-item">
-            <div class="tl-line">
-              <div class="tl-dot"></div>
-              <div class="tl-connector"></div>
-            </div>
-            <div class="tl-content">
-              <h4>UI/UX Design Intern</h4>
-              <div class="tl-meta">Orbosis Global Pvt. Ltd. · 2026 – Present</div>
-              <p>Contributing to design systems, user flows, and digital product UI for clients across India.</p>
-            </div>
-          </div>
-          <div class="tl-item">
-            <div class="tl-line">
-              <div class="tl-dot"></div>
-            </div>
-            <div class="tl-content">
-              <h4>Bacherlors in Information Technology</h4>
-              <div class="tl-meta">Padmashree College, Kathmandu · 2024 – Present</div>
-              <p>Studying core IT subjects while actively developing skills in design, coding, and content writing</p>
-            </div>
+            <div class="stat-label">Skills</div>
           </div>
         </div>
       </div>
@@ -130,99 +107,78 @@
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="skills-bg"></div>
+<!-- SKILLS SECTION -->
+<section id="skills" class="section skills-section">
   <div class="container">
-    <div class="reveal" style="text-align:center;margin-bottom:20px;">
-      <div class="section-label" style="justify-content:center;">What I Do</div>
-      <h2 class="section-title">Core Skills</h2>
+    <div class="section-header reveal">
+      <h2 class="section-title">What I Do</h2>
     </div>
     <div class="skills-grid">
-      <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-card reveal-item" data-skill="ui">
         <div class="skill-icon">🎨</div>
         <h3>UI/UX Design</h3>
-        <p>Crafting clean, user-centered interfaces using Figma and Photoshop. Focused on usability, aesthetics, and seamless user journeys.</p>
+        <p>Clean, user-centered interfaces built in Figma with focus on usability and modern aesthetics.</p>
       </div>
-      <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-card reveal-item" data-skill="code">
         <div class="skill-icon">⚡</div>
-        <h3>Vibe Coding</h3>
-        <p>Building creative, expressive web experiences with HTML, CSS, and JavaScript. Code that feels as good as it looks.</p>
+        <h3>Web Development</h3>
+        <p>Smooth animations and interactive experiences using HTML, CSS, JavaScript.</p>
       </div>
-      <div class="skill-card reveal reveal-delay-3">
-        <div class="skill-icon">✍️</div>
-        <h3>SEO Content Writing</h3>
-        <p>Writing compelling, search-optimized content that ranks and converts. Strategy-first, creativity-driven.</p>
+      <div class="skill-card reveal-item" data-skill="seo">
+        <div class="skill-icon">📈</div>
+        <h3>SEO Content</h3>
+        <p>Strategic content that ranks and converts. Research-first, creativity-driven.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects">
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
   <div class="container">
-    <div class="reveal" style="text-align:center;margin-bottom:20px;">
-      <div class="section-label" style="justify-content:center;">My Work</div>
-      <h2 class="section-title">Projects</h2>
+    <div class="section-header reveal">
+      <h2 class="section-title">Featured Projects</h2>
     </div>
     <div class="projects-grid">
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb">
-          <div class="project-thumb-inner">✈️</div>
-          <div class="project-badge">UI/UX</div>
+      <div class="project-card reveal-item">
+        <div class="project-media">
+          <div class="project-icon">✈️</div>
+          <div class="project-type">UI/UX Design</div>
         </div>
-        <div class="project-body">
-          <h3>Trips & Stays</h3>
-          <p>A full travel booking platform UI covering flights, taxis, and hotel reservations with a modern, intuitive user experience.</p>
-          <div class="project-tags">
-            <span class="project-tag">Figma</span>
-            <span class="project-tag">UI Design</span>
-            <span class="project-tag">UX Research</span>
+        <div class="project-info">
+          <h3>Travel Booking Platform</h3>
+          <p>Complete UI for flights, hotels, and taxis with modern design patterns.</p>
+          <div class="project-tech">
+            <span>Figma</span>
+            <span>Prototyping</span>
           </div>
         </div>
       </div>
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb">
-          <div class="project-thumb-inner">📋</div>
-          <div class="project-badge">UI/UX</div>
+      <div class="project-card reveal-item">
+        <div class="project-media">
+          <div class="project-icon">📱</div>
+          <div class="project-type">Web Development</div>
         </div>
-        <div class="project-body">
-          <h3>Task Manager App</h3>
-          <p>A minimalist yet powerful productivity app interface designed to keep teams focused, organized, and on track every day.</p>
-          <div class="project-tags">
-            <span class="project-tag">Figma</span>
-            <span class="project-tag">Prototyping</span>
-            <span class="project-tag">Wireframing</span>
+        <div class="project-info">
+          <h3>Portfolio 2026</h3>
+          <p>This portfolio - 3D animations, particle systems, magnetic interactions.</p>
+          <div class="project-tech">
+            <span>HTML/CSS/JS</span>
+            <span>Canvas API</span>
           </div>
         </div>
       </div>
-      <div class="project-card reveal reveal-delay-1">
-        <div class="project-thumb">
-          <div class="project-thumb-inner">🌐</div>
-          <div class="project-badge">Vibe Coding</div>
+      <div class="project-card reveal-item">
+        <div class="project-media">
+          <div class="project-icon">📝</div>
+          <div class="project-type">SEO Content</div>
         </div>
-        <div class="project-body">
-          <h3>Portfolio Landing Page</h3>
-          <p>This very portfolio — a 3D animated, fully responsive landing page coded from scratch with immersive visual effects and smooth interactions.</p>
-          <div class="project-tags">
-            <span class="project-tag">HTML/CSS</span>
-            <span class="project-tag">JavaScript</span>
-            <span class="project-tag">3D Animation</span>
-          </div>
-        </div>
-      </div>
-      <div class="project-card reveal reveal-delay-2">
-        <div class="project-thumb">
-          <div class="project-thumb-inner">📝</div>
-          <div class="project-badge">Content</div>
-        </div>
-        <div class="project-body">
-          <h3>SEO Content Campaign</h3>
-          <p>A full SEO content writing project with keyword research, optimized articles, and structured metadata to boost organic search rankings.</p>
-          <div class="project-tags">
-            <span class="project-tag">SEO</span>
-            <span class="project-tag">Content Strategy</span>
-            <span class="project-tag">Copywriting</span>
+        <div class="project-info">
+          <h3>Content Strategy</h3>
+          <p>SEO-optimized articles with keyword research and content architecture.</p>
+          <div class="project-tech">
+            <span>SEO</span>
+            <span>Copywriting</span>
           </div>
         </div>
       </div>
@@ -230,86 +186,72 @@
   </div>
 </section>
 
-<!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-info reveal">
-      <h3>Open for collaboration</h3>
-      <p>Whether it's a design project, content campaign, or just a chat — I'd love to hear from you.</p>
-      
-      <div class="contact-item">
-        <div class="ci-icon">📍</div>
-        <div class="ci-text">
-          <div class="ci-label">Location</div>
-          <div class="ci-val">Kathmandu, Nepal</div>
+<!-- CONTACT SECTION -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Open for collaboration</p>
+    </div>
+    <div class="contact-layout">
+      <div class="contact-info reveal-item">
+        <h3>Let's work together</h3>
+        <p>Design projects, web development, or SEO content - I'm ready to help.</p>
+        <div class="contact-list">
+          <a href="#" class="contact-link">
+            <span class="contact-icon">📍</span>
+            <span>Kathmandu, Nepal</span>
+          </a>
+          <a href="tel:+9779761625999" class="contact-link">
+            <span class="contact-icon">📱</span>
+            <span>+977 9761625999</span>
+          </a>
+          <a href="mailto:kabirpzpt23@gmail.com" class="contact-link">
+            <span class="contact-icon">✉️</span>
+            <span>kabirpzpt23@gmail.com</span>
+          </a>
+          <a href="https://orbosis.com" target="_blank" class="contact-link">
+            <span class="contact-icon">💼</span>
+            <span>Orbosis Global Pvt. Ltd.</span>
+          </a>
         </div>
       </div>
-      
-      <div class="contact-item">
-        <div class="ci-icon">📱</div>
-        <div class="ci-text">
-          <div class="ci-label">Phone</div>
-          <div class="ci-val">+977 9761625999</div>
-        </div>
-      </div>
-      
-      <div class="contact-item">
-        <div class="ci-icon">✉️</div>
-        <div class="ci-text">
-          <div class="ci-label">Email</div>
-          <div class="ci-val">kabirpzpt23@gmail.com</div>
-        </div>
-      </div>
-      
-      <!-- Fixed clickable internship - link on text only -->
-      <div class="contact-item" style="cursor:pointer;" onclick="window.open('https://orbosis.com', '_blank')">
-        <div class="ci-icon">💼</div>
-        <div class="ci-text">
-          <div class="ci-label">Internship</div>
-          <div class="ci-val" style="color: var(--blue-light);">Orbosis Global Pvt. Ltd.</div>
-        </div>
+      <div class="contact-form reveal-item">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" placeholder="Your Name" required>
+              <label>Name</label>
+            </div>
+            <div class="form-field">
+              <input type="email" placeholder="your@email.com" required>
+              <label>Email</label>
+            </div>
+          </div>
+          <div class="form-field">
+            <input type="text" placeholder="Subject">
+            <label>Subject</label>
+          </div>
+          <div class="form-field">
+            <textarea placeholder="Tell me about your project..." rows="5"></textarea>
+            <label>Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
       </div>
     </div>
-    
-          </div>
-          <div class="contact-form reveal reveal-delay-1">
-            <form id="contactForm">
-              <div class="form-row">
-                <div class="form-group">
-                  <label>Your Name</label>
-                  <input type="text" placeholder="John Doe" required>
-                </div>
-                <div class="form-group">
-                  <label>Your Email</label>
-                  <input type="email" placeholder="hello@example.com" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Subject</label>
-                <input type="text" placeholder="Project Inquiry">
-              </div>
-              <div class="form-group">
-                <label>Message</label>
-                <textarea placeholder="Tell me about your project..."></textarea>
-              </div>
-              <button type="submit" class="submit-btn">Send Message →</button>
-            </form>
-          </div>
-        </div>
-      </div>
+  </div>
 </section>
 
-<footer>
+<footer class="footer">
   <div class="container">
-    <p>© 2026 <span>Kabir Prajapati</span> — Designed & Built with ❤️ in Kathmandu</p>
+    <p>© 2026 Kabir Prajapati — Made with ❤️ in Kathmandu</p>
   </div>
 </footer>
 
-<div class="toast" id="toast">✅ Message sent successfully!</div>
+<!-- Toast Notification -->
+<div class="toast" id="toast">Message sent successfully! 🎉</div>
 
-<script src="style.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
-
-
-
