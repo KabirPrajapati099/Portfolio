@@ -609,6 +609,23 @@ section{position:relative;z-index:2;}
 }
 .submit-btn:hover::after{left:100%;}
 
+
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+
 /* ── TOAST ── */
 .toast{
   position:fixed;bottom:30px;right:30px;z-index:1000;
